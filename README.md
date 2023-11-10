@@ -1,6 +1,6 @@
 # Gestion des Étudiants et Filières - API GraphQL avec Spring
 
-Bienvenue dans le projet de gestion des étudiants et filières développé en utilisant Spring Boot et GraphQL. Ce projet vous permet de gérer les informations sur les étudiants et les filières de manière efficace en utilisant une API GraphQL.
+Bienvenue dans le projet de gestion des étudiants et des filières développé en utilisant Spring Boot et GraphQL. Ce projet vous permet de gérer les informations sur les étudiants et les filières de manière efficace en utilisant une API GraphQL.
 
 ## Configuration du Projet
 
@@ -41,6 +41,18 @@ mvn spring-boot:run
 ```
 
 L'application sera accessible à l'adresse suivante : [http://localhost:8080](http://localhost:8080).
+
+## Installation de Spring pour GraphQL
+
+Assurez-vous d'inclure la dépendance Spring Boot GraphQL dans votre fichier `pom.xml` :
+
+```xml
+<dependency>
+    <groupId>com.graphql-java-kickstart</groupId>
+    <artifactId>graphql-spring-boot-starter</artifactId>
+    <version>11.1.0</version> <!-- Vérifiez la dernière version sur Maven Central -->
+</dependency>
+```
 
 ## Exploration de l'API avec GraphiQL
 
@@ -91,8 +103,8 @@ Pour plus de détails sur les types de requêtes et de mutations disponibles, ve
 
 ## Contribution
 
-Les contributions sont les bienvenues! Si vous souhaitez contribuer à ce projet, veuillez soumettre une pull request.
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez soumettre une pull request.
 
-Merci d'avoir choisi notre API de gestion des étudiants et filières avec Spring et GraphQL. Si vous avez des questions ou des problèmes, n'hésitez pas à ouvrir une issue.
+Merci d'avoir choisi notre API de gestion des étudiants et des filières avec Spring et GraphQL. Si vous avez des questions ou des problèmes, n'hésitez pas à ouvrir une issue.
 
 Bonne programmation ! 🚀
