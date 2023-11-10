@@ -1,0 +1,53 @@
+# Define an input type for creating a Filiere
+input FiliereInput {
+    code: String!
+    libelle: String!
+}
+
+input FiliereIdentifier {
+    id: ID!
+}
+
+input StudentInput {
+    name: String!
+    age: Int!
+    filiereId: ID!
+}
+
+# Define the Student type
+type Student {
+    id: ID!
+    name: String!
+    age: Int!
+    filiere: Filiere!
+}
+
+# Define the Filiere type
+type Filiere {
+    id: ID!
+    code: String!
+    libelle: String!
+    students: [Student]
+}
+
+# Define the Query type for fetching data
+type Query {
+    Students: [Student]
+    filieres: [Filiere]
+    filiereById(id: ID!): Filiere
+    studentById(id: ID!): Student
+    findByFiliere(filiereId: FiliereIdentifier!): [Student]
+}
+
+# Define the Mutation type for modifying data
+type Mutation {
+    # Filiere Mutations
+    addFiliere(filiereInput: FiliereInput!): Filiere
+    deleteFiliere(id: ID!) : Boolean
+    updateFiliere(id:ID!, filiereInput: FiliereInput!): Boolean
+
+    # Student Mutations
+    addStudent(studentInput: StudentInput!): Student
+    deleteStudent(id: ID!) : Boolean
+    updateStudent(id:ID!, studentInput: StudentInput!): Boolean
+}
