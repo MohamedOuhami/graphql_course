@@ -99,7 +99,7 @@ mutation {
 
 ### Documentation Additionnelle
 
-Pour plus de détails sur les types de requêtes et de mutations disponibles, veuillez consulter la documentation générée automatiquement à l'adresse [http://localhost:8080/graphql/schema.json](http://localhost:8080/graphql/schema.json).
+Pour plus de détails sur les types de requêtes et de mutations disponibles, veuillez consulter la documentation générée automatiquement à l'adresse [http://localhost:8080/graphiql](http://localhost:8080/graphiql).
 
 ## Contribution
 
